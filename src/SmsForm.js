@@ -15,7 +15,7 @@ const App = () => {
     e.preventDefault();
 
     try {
-      const res = await fetch('https://sms-backend-twilio.onrender.com/send-sms', {
+      const res = await fetch('http://localhost:5000/send-sms', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
